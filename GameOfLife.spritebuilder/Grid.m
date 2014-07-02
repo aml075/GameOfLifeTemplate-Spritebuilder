@@ -41,6 +41,10 @@ static const int GRID_COLUMNS = 10;
     float x = 0;
     float y = 0;
     
+    
+    // initalise the array as a blank NSMutableArray
+    _gridArray = [NSMutableArray array];
+    
     // initialise Creatures
     
     for (int i = 0; i < GRID_ROWS; i++) {
@@ -57,9 +61,9 @@ static const int GRID_COLUMNS = 10;
             //this is shorthand to access an array inside an array
             _gridArray[i][j] = creature;
             
-            //make creatures visible to test this methos, remove this once we know we have
+            // make creatures visible to test this methos, remove this once we know we have
             
-            //creature.isAlive = YES;
+            // creature.isAlive = YES;
             
             x+=_cellWidth;
         }
