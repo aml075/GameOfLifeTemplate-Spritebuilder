@@ -43,6 +43,7 @@ static const int GRID_COLUMNS = 10;
     
     
     // initalise the array as a blank NSMutableArray
+    
     _gridArray = [NSMutableArray array];
     
     // initialise Creatures
