@@ -91,13 +91,16 @@ static const int GRID_COLUMNS = 10;
 {
     // get the row and column that was touched, return the Creature inside the corresponding
     
-    NSInteger(row) = touchPosition.y / _cellHeight;
+    int row = touchPosition.y / _cellHeight;
     
-    NSInteger(column) = touchPosition.x / _cellWidth;
+    int column = touchPosition.x / _cellWidth;
     
-    return _gridArray[row][column];
+    creature = _gridArray[row][column];
+    
+    return creature;
 
 }
+
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
    {
        BOOL isIndexValid = YES;

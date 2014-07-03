@@ -18,10 +18,5 @@
 - (void)countNeighbors;
 - (void)updateCreatures;
 
-// @property (nonatomic, assign) int countNeighbors;
-// @property (nonatomic, assign) int updateCreatures;
-
-
-
 
 @end
