@@ -14,4 +14,14 @@
 @property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
 
+- (void)evolveStep;
+- (void)countNeighbors;
+- (void)updateCreatures;
+
+// @property (nonatomic, assign) int countNeighbors;
+// @property (nonatomic, assign) int updateCreatures;
+
+
+
+
 @end
