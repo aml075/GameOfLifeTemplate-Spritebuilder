@@ -21,7 +21,7 @@
     return self;
 }
 
-- (void)setIsALive:(BOOL)newState {
+- (void)setIsAlive:(BOOL)newState {
     // when you create an @property as we did inthe .h, an instance variable with a lea
     _isAlive = newState;
     
