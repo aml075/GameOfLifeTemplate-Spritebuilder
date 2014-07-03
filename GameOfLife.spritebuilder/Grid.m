@@ -55,7 +55,7 @@ static const int GRID_COLUMNS = 10;
         
         for (int j = 0; j < GRID_COLUMNS; j++) {
             Creature *creature = [[Creature alloc] initCreature];
-            creature.anchorPoint = ccp(0,0);
+            creature.anchorPoint = ccp(0, 0);
             creature.position = ccp(x, y);
             [self addChild:creature];
             
@@ -91,9 +91,9 @@ static const int GRID_COLUMNS = 10;
 {
     // get the row and column that was touched, return the Creature inside the corresponding
     
-    NSInteger(row) = touchPosition.y / touchPosition.x;
+    NSInteger(row) = touchPosition.y / _cellHeight;
     
-    NSInteger(column) = touchPosition.x / touchPosition.y;
+    NSInteger(column) = touchPosition.x / _cellWidth;
     
     return _gridArray[row][column];
 
