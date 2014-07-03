@@ -133,7 +133,8 @@ static const int GRID_COLUMNS = 10;
         for ( int j = 0; j < [_gridArray count]; j++ )
         {
             Creature *currentCreature = _gridArray[i][j];
-            if (currentCreature.livingNeighbors == 3) {
+            if (currentCreature.livingNeighbors == 3)
+            {
                 currentCreature.isAlive = YES;
             }
             else if ( (currentCreature.livingNeighbors <=1) || (currentCreature.livingNeighbors >=4))
@@ -144,8 +145,7 @@ static const int GRID_COLUMNS = 10;
             {
                 _totalAlive++;
             }
-            }
-        
+        }
     }
 }
 
@@ -189,6 +189,6 @@ for (int i = 0; i < [_gridArray count]; i++)
         }
     }
 }
-
-
+}
+}
 @end
